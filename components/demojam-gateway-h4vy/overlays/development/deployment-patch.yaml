@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: demojam-gateway-h4vy
+  namespace: phayes1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:42918f5523da578cb33c0c8c3c2539d0f14754b5fbfadfc8467a4d06299eaed2
+        name: my-nodejs
+        resources: {}
+status: {}
