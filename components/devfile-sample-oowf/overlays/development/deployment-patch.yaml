@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-oowf
+  namespace: phayes1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:8ccd9f29e80965fde97f7e8b1bf2d8ff67e8158a6d345fc9e52d12236c57caa5
+        name: my-nodejs
+        resources: {}
+status: {}
