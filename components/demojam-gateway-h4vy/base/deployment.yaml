@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: demojam-gateway-h4vy
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:phayes1-tenant-demojam-gateway-h4vy
+      - image: quay.io/redhat-appstudio/user-workload@sha256:42918f5523da578cb33c0c8c3c2539d0f14754b5fbfadfc8467a4d06299eaed2
         name: my-nodejs
         ports:
         - containerPort: 3001
